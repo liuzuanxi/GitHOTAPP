@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/推荐/推荐",
+    "pages/热点/热点",
+    "pages/我的/我的"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+ 
+
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/推荐.png",
+        "iconPath": "images/推荐.png",
+        "pagePath": "pages/推荐/推荐",
+        "text": "推荐"
+      },
+      {
+        "selectedIconPath": "images/热点.png",
+        "iconPath": "images/热点.png",
+        "pagePath": "pages/热点/热点",
+        "text": "热点"
+      },
+      {
+        "selectedIconPath": "images/我的.png",
+        "iconPath": "images/我的.png",
+        "pagePath": "pages/我的/我的",
+        "text": "我的"
+      }
+    ]
+  }
+} 
+
+
