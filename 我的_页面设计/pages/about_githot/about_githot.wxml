@@ -1,0 +1,6 @@
+<!--pages/about_githot/about_githot.wxml-->
+<view class="about_githot_style">
+<text>关于我们</text>
+
+</view>
+
