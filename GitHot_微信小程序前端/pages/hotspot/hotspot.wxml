@@ -1,0 +1,9 @@
+<!--pages/hotspot/hotspot.wxml-->
+<text></text>
+<view>
+    <button>{{list[0]}}</button>
+    <button>{{list[1]}}</button>
+    <button>{{list[2]}}</button>
+    <button>{{list[3]}}</button>
+    <button>{{list[4]}}</button>
+</view>

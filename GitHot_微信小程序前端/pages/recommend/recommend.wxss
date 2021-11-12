@@ -1,0 +1,5 @@
+.list{
+    color: aquamarine;
+   
+    bottom: 0;
+}
