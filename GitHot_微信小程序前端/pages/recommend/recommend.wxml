@@ -1,0 +1,9 @@
+
+<text></text>
+<view>
+    <button bindtap="change" class="list">{{list[0]}}</button>
+    <button bindtap="change" class="list">{{list[0]}}</button>
+    <button bindtap="change" class="list">{{list[0]}}</button>
+    <button bindtap="change" class="list">{{list[0]}}</button>
+    <button bindtap="change" class="list">{{list[0]}}</button>
+</view>
