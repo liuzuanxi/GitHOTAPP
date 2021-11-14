@@ -1,0 +1,17 @@
+.about_githot_style {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+  }
+  .img_style{
+    overflow: left;
+    width: 750rpx;
+    height: 90rpx;
+    top: 50rpx;
+    border-radius: 50%;
+    position: relative;
+  }
