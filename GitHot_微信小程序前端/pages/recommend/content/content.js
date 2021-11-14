@@ -5,29 +5,44 @@ Page({
      * 页面的初始数据
      */
     data: {
-      detailObj:{},
-      index:null,
+      list:[],
       // 是否收藏
       isCollected:false,
       text:["asdasdasdasd\nasdasd\nawsdadasdasd\n123123"]
     },
    handleCollection(){
-    wx.navigateTo({      
-      url: '../../recommend/recommend',    //要跳转到的页面路径
+  //   wx.navigateTo({      
+  //     url: '../../recommend/recommend',    //要跳转到的页面路径
 
-   })  
-      let isCollected = !this.data.isCollected
+  //  })  
+      this.data.isCollected = !this.data.isCollected
       this.setData({
-        // 下面本来是这样子的:isCollected=isCollected,可以简写
-        isCollected
+       
+        isCollected:this.data.isCollected
       })
       //提示用户
       wx.showToast({
-          title: isCollected ? '收藏成功' : '取消收藏',
-          icon:'success'
+          title: this.data.isCollected ? '收藏成功' : '取消收藏',
+          icon:'success',
+          // image:isCollected ? '../../../images/打勾.png' : '../../../images/打叉.png'
       })
-      //点击收藏图标后缓存数据到本地
-    //把data中的index放到新let出来的index中,因为下面要把index也存进去,要用index来判断你收藏了哪个页面
+      //点击收藏图标后缓存数据到数据库
+      // wx.request({
+      //   url: 'url',
+      //   data: data,
+      //   dataType: dataType,
+      //   enableCache: true,
+      //   enableHttp2: true,
+      //   enableQuic: true,
+      //   header: header,
+      //   method: method,
+      //   responseType: responseType,
+      //   timeout: 0,
+      //   success: (result) => {},
+      //   fail: (res) => {},
+      //   complete: (res) => {},
+      // })
+  
  
     
 
@@ -40,9 +55,13 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-//根据本地缓存的数据判读用户是否收藏当前文章
 
 
+    this.setData({
+    list:options.data,
+    isCollected:JSON.parse(options.id) 
+
+    })
 
     },
 

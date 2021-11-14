@@ -14,7 +14,7 @@
 	display: flex;
 	bottom: 20px;
 	right: 20px;
-	background-color: transparent;   /*按钮透明*/  
+	background-color:transparent;   /*按钮透明*/  
 	border:none;				/*设置按钮边框*/
 
 }
