@@ -1,9 +1,59 @@
 
-<text></text>
-<view>
-    <button bindtap="change" class="list">{{list[0]}}</button>
-    <button bindtap="change" class="list">{{list[0]}}</button>
-    <button bindtap="change" class="list">{{list[0]}}</button>
-    <button bindtap="change" class="list">{{list[0]}}</button>
-    <button bindtap="change" class="list">{{list[0]}}</button>
+
+<view class="view">
+    <button bindtap="Goto" style="width: 100%;" class="list" id="0">{{list[0]}} 
+        
+        <view>
+            <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected[0]}}" src="../../images/五角星_收藏.png" >
+            </image>
+            <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected[0]}}" src="../../images/五角星_未收藏.png" >
+            </image> 
+            <button class="button" style="width: 15px; height: 35px; right: 0px;" catchtap="handleCollection" id="0">
+            </button>
+        </view>
+    </button>
+    
+    <button bindtap="Goto" style="width: 100%;"class="list" id="1">{{list[1]}}
+        <view>
+            <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected[1]}}" src="../../images/五角星_收藏.png" >
+            </image>
+            <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected[1]}}" src="../../images/五角星_未收藏.png" >
+            </image> 
+            <button class="button" style="width: 15px; height: 35px; right: 0px;" catchtap="handleCollection" id="1">
+            </button>
+        </view>
+    </button>
+    
+    <button bindtap="Goto" style="width: 100%;" class="list" id="2">{{list[2]}}
+        <view>
+            <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected[2]}}" src="../../images/五角星_收藏.png" >
+            </image>
+            <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected[2]}}" src="../../images/五角星_未收藏.png" >
+            </image> 
+            <button class="button" style="width: 15px; height: 35px; right: 0px;" catchtap="handleCollection" id="2">
+            </button>
+        </view>
+    </button>
+
+    <button bindtap="Goto" style="width: 100%;" class="list" id="3">{{list[3]}}
+        <view>
+            <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected[3]}}" src="../../images/五角星_收藏.png" >
+            </image>
+            <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected[3]}}" src="../../images/五角星_未收藏.png" >
+            </image> 
+            <button class="button" style="width: 15px; height: 35px; right: 0px;" catchtap="handleCollection" id="3"> 
+            </button>
+        </view>
+    </button>
+
+    <button bindtap="Goto"style="width: 100%;" class="list" id="4">{{list[4]}}
+        <view>
+            <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected[4]}}" src="../../images/五角星_收藏.png" >
+            </image>
+            <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected[4]}}" src="../../images/五角星_未收藏.png" >
+            </image> 
+            <button class="button" style="width: 15px; height: 35px; right: 0px;" catchtap="handleCollection" id="4">
+            </button>
+        </view>
+    </button> 
 </view>
