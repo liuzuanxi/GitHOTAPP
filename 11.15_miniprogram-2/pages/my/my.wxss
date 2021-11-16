@@ -1,0 +1,61 @@
+/**index.wxss**/
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+  }
+  
+  .userinfo-avatar {
+    overflow: left;
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  }
+  
+  .usermotto {
+    margin-top: 200px;
+  }
+  .my_style {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+  }
+  .text_style1{
+    position: absolute;
+    top: 300rpx;
+    border: 1rpx solid  black;
+    flex-direction: column;
+    margin: 5rpx 0rpx 5rpx 0rpx;
+  }
+  .text_style2{
+    position: absolute;
+    top: 405rpx;
+    border: 1rpx solid  black;
+    flex-direction: column;
+    margin: 5rpx 0rpx 5rpx 0rpx;
+  }
+  .text_style3{
+    position: absolute;
+    top: 510rpx;
+    border: 1rpx solid  black;
+    flex-direction: column;
+    margin: 5rpx 0rpx 5rpx 0rpx;
+  }
+  
+  /*.space_style{
+    margin-right: 419rpx;
+  }*/
+  .img_style{
+    overflow: left;
+    width: 750rpx;
+    height: 90rpx;
+
+    border-radius: 50%;
+  }
+  

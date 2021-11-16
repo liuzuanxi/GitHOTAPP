@@ -1,0 +1,7 @@
+.collection_style{
+    width: 78rpx; 
+    height: 85rpx; 
+    display: block; 
+    box-sizing: border-box;
+
+}
