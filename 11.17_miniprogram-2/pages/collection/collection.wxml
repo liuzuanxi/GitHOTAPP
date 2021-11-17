@@ -1,0 +1,25 @@
+<view class="collection_style" bindtap="ViewCollection">
+    <view class="id_style">
+    id
+    </view>
+    <view class="content_style">填充内容.......................</view>
+</view>
+<view class="collection_style" bindtap="ViewCollection">
+    <view class="id_style">
+    id
+    </view>
+    <view class="content_style">填充内容.......................</view>
+</view>
+
+<!-- <view wx:for="{{collected}}" wx:key="index">
+    {{item}}
+</view> -->
+
+<!-- <view class="collectionimg_style" bindtap="handleCollection">
+    <block wx:if="{{isCollected == false}}">
+        <image src="../img/取消收藏.png" class="collection_style"></image>
+    </block>
+    <block wx:elif="{{isCollected == true}}" class="collection_style">
+        <image src="../img/收藏.png"class="collection_style"></image>
+    </block>
+</view> -->

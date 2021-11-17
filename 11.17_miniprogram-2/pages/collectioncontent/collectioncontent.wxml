@@ -1,0 +1,9 @@
+
+<view class="collectionimg_style" bindtap="handleCollection">
+    <block wx:if="{{isCollected == false}}">
+        <image src="../img/取消收藏.png" class="collection_style"></image>
+    </block>
+    <block wx:elif="{{isCollected == true}}" class="collection_style">
+        <image src="../img/收藏.png"class="collection_style"></image>
+    </block>
+</view>
