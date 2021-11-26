@@ -1,0 +1,27 @@
+.image{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	display: flex;
+	bottom: 20px;
+	right: 20px;
+
+}
+.button{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	display: flex;
+	bottom: 20px;
+	right: 20px;
+	background-color:transparent;   /*按钮透明*/  
+	border:none;				/*设置按钮边框*/
+
+}
+.text{
+	
+		width: auto;
+		height: auto;
+		background-color: aqua;
+	
+}

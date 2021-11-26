@@ -1,0 +1,6 @@
+<!--pages/hot/hot.wxml-->
+<image src="../img/热点预测.png" class="img_style"></image>
+<!-- <text>{{hotData}}</text> -->
+<view wx:for="{{hotData}}" wx:key="index" class="text_style1">
+    <text class="title">{{index+1}}:    {{item}}</text>
+</view>

@@ -1,0 +1,7 @@
+<view>
+    
+      <text class="text">{{list}}</text>
+      <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected}}" src="../../../images/五角星_收藏.png" ></image>
+     <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected}}" src="../../../images/五角星_未收藏.png" ></image> 
+     <button class="button" style="width: 15px; height: 35px; right: 0px;" catchtap="handleCollection"></button>
+</view>
