@@ -1,0 +1,29 @@
+/* pages/collectioncontent/collectioncontent.wxss */
+.collectionimg_style{
+
+    overflow: left;
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 100%;
+
+}
+.collection_style{
+    position:fixed;
+    bottom:0;
+}
+.image{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	display: flex;
+	bottom: 20px;
+	right: 20px;
+}
+
+.text{
+	
+		width: auto;
+		height: auto;
+		background-color: aqua;
+	
+}

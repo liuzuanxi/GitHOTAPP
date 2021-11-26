@@ -1,0 +1,7 @@
+<!--pages/hot/hot.wxml-->
+<image src="../img/Hot_prediction.png" class="img_style"></image>
+<!-- <text>{{hotData}}</text> -->
+<view wx:for="{{data}}" wx:key="index" class="text_style1" bindtap="Viewhotlist" id="{{item.topic_id}}">
+    <text class="title">{{index+1}}:    {{item.topic}}</text>
+    
+</view>
