@@ -1,0 +1,21 @@
+<view>
+      {{article_id}}\n\n\n\n\n
+
+      <view  wx:if="{{!which}}">
+            <button bindtap="onPullDownRefresh" class="button2" style="position: fixed; left: 244rpx; top: 476rpx; width: 289rpx; height: 101rpx; display: block; box-sizing: border-box">再试一次</button>
+        </view>
+
+      <view wx:if="{{which}}">
+            <text class="text">title:           {{title}}</text>
+           <button bindtap="changeview">
+                  <web-view src="{{url}}" wx:if="{{!view}}"></web-view>原地址{{url}}\n
+           </button>
+           
+            <text class="text">文章摘要:\n        {{article}}\n\n</text>
+            <text class="text">Keyword:\n         {{keyword}}</text>
+            
+            <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected}}" src="../../../images/五角星_收藏.png" ></image>
+      <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected}}" src="../../../images/五角星_未收藏.png" ></image> 
+      <button class="button" style="width: 15px; height: 35px; right: 0px;" catchtap="handleCollection"></button>
+      </view>
+</view>

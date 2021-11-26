@@ -1,0 +1,37 @@
+<view class="view">
+        
+        <view class="view" wx:if="{{!which}}">
+            <button bindtap="onPullDownRefresh" class="button2" style="border: 2rpx; position: relative; left: 244rpx; top: 476rpx; width: 289rpx; height: 101rpx; display: block; box-sizing: border-box">再试一次</button>
+        </view>
+    
+        <view class="view" wx:if="{{which}}" >
+            <block class="order_content" wx:for="{{article}}" style="border-bottom: solid 2rpx; height: 100%;width: 100%;left:10px;" data-item="item" wx:for-index="idx" >{{article[idx].title}}
+               
+                <button bindtap="Goto" style="border: solid 2rpx;width: 100%; position: relative; left: 0rpx; top: 1rpx" class="article" id="{{idd[idx]}}">
+                    <text style="display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 50rpx;color: red;">{{ttitle[idx]}}
+                    </text>
+                              
+                    <image class="image"  catch:tap="handleCollection()" wx:if="{{isCollected[idx]}}" src="../../images/五角星_收藏.png"  style="position: absolute; left: 661rpx; top: 75+100*idx rpx">
+                    </image>
+                    <image class="image" catchtap="handleCollection()" wx:if="{{!isCollected[idx]}}" src="../../images/五角星_未收藏.png"  style="position: absolute">
+                    </image> 
+                    <button class="button" style="width: 15px; height: 35px; right: 0px; position:absolute; left: 625rpx; top:75+100*idx rpx" catchtap="handleCollection" id="{{idd[idx]}}">
+                    </button>
+                    <text class="text_article" style="word-break: break-all; padding-left: 45px; text-align: left; position: relative; left: -56rpx; top: -16rpx">{{article[idx]}}</text> 
+                </button>
+            </block>
+        </view>
+</view>
+
+<!-- <view wx:for="{{collected}}" wx:key="index">
+    {{item}}
+</view> -->
+
+<!-- <view class="collectionimg_style" bindtap="handleCollection">
+    <block wx:if="{{isCollected == false}}">
+        <image src="../img/取消收藏.png" class="collection_style"></image>
+    </block>
+    <block wx:elif="{{isCollected == true}}" class="collection_style">
+        <image src="../img/收藏.png"class="collection_style"></image>
+    </block>
+</view> -->

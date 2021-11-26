@@ -1,0 +1,4 @@
+<view wx:for="{{data}}" wx:key="index" class="text_style1" bindtap="ViewhotlistContent" id="{{item.article_id}}">
+    <view>{{item.title}}</view>
+    <view>{{item.article}}</view>
+</view>

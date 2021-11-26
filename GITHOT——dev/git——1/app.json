@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/recommend/recommend",
+    "pages/recommend/content/content",
+    "pages/logs/logs",
+    "pages/img/img",
+    "pages/my/my",
+    "pages/hot/hot",
+    "pages/hotlist/hotlist",
+    "pages/hotlistcontent/hotlistcontent",
+    
+    "pages/indiv/indiv",
+    "pages/collection/collection",
+    "pages/collectioncontent/collectioncontent",
+    "pages/about_githot/about_githot"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Githot",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/recommend/recommend",
+      "text":"推荐",
+      "iconPath": "pages/img/Recommend_page.png",
+      "selectedIconPath": "pages/img/Recommend_page.png"
+      
+    },
+    {
+      "pagePath": "pages/hot/hot",
+      "text":"热点",
+      "iconPath": "pages/img/Hot_page.png",
+      "selectedIconPath": "pages/img/Hot_page.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text":"我的",
+      "iconPath": "pages/img/My_page.png",
+      "selectedIconPath": "pages/img/My_page.png"
+    }
+
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

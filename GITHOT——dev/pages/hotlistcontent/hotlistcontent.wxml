@@ -1,0 +1,14 @@
+<!--pages/hotlistcontent/hotlistcontent.wxml-->
+<view >title: {{data.title}}</view>
+<button bindtap="changeview">
+                  <web-view src="{{data.url}}" wx:if="{{!view}}"></web-view>原地址{{data.url}}\n
+           </button>
+<view>文章摘要：{{data.article}}</view>
+<view></view>
+<view>key_words:</view>
+<view>{{data.key_words}}</view>
+<image class="image"  bindtap="handleCollection" wx:if="{{isCollected}}" src="../img/Collection.png" ></image>
+<image class="image" bindtap="handleCollection" wx:if="{{!isCollected}}" src="../img/Cancle_Collection.png" >
+</image>
+
+
