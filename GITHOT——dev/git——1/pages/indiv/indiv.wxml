@@ -1,0 +1,14 @@
+<view>
+    <view>选择一下你感兴趣的内容吧</view>
+    <checkbox-group bindchange="handleItemChange">
+        <label wx:for="{{list}}" wx:key="id" class="checkbox_style">
+            <checkbox value="{{item.value}}" class="checkbox_style1">
+                {{item.name}}
+            </checkbox>
+        </label>
+    </checkbox-group>
+    <view>
+        您选中了：
+        {{checklist}}
+    </view>
+</view>
